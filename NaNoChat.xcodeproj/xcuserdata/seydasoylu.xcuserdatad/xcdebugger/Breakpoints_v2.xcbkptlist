@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5D892967-592C-4CF2-BCE5-FE3349FE5C60"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC620F57-B034-47C3-88AD-A97050C8475C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NaNoChat/Controller/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ChatViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3FF9CC96-75F5-4094-8001-E8CC0A7A925D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NaNoChat/Controller/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ChatViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3FF9CC96-75F5-4094-8001-E8CC0A7A925D - 87e7d9d148b68649"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NaNoChat.ChatViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; NaNoChat.ChatViewController"
+                  moduleName = "NaNoChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seydasoylu/Documents/NaNoChat/NaNoChat/Controller/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3FF9CC96-75F5-4094-8001-E8CC0A7A925D - ecf64c2a7f58ba08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NaNoChat.ChatViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; NaNoChat.ChatViewController"
+                  moduleName = "NaNoChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seydasoylu/Documents/NaNoChat/NaNoChat/Controller/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "3FF9CC96-75F5-4094-8001-E8CC0A7A925D - 4b526b39bb97f7c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NaNoChat.ChatViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NaNoChat.ChatViewController&gt;"
+                  moduleName = "NaNoChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seydasoylu/Documents/NaNoChat/NaNoChat/Controller/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "3FF9CC96-75F5-4094-8001-E8CC0A7A925D - 9d8574220c7ef1e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NaNoChat.ChatViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NaNoChat.ChatViewController&gt;"
+                  moduleName = "NaNoChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seydasoylu/Documents/NaNoChat/NaNoChat/Controller/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "3FF9CC96-75F5-4094-8001-E8CC0A7A925D - 392fae2237ef13bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NaNoChat.ChatViewController.__deallocating_deinit"
+                  moduleName = "NaNoChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seydasoylu/Documents/NaNoChat/NaNoChat/Controller/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

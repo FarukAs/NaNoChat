@@ -10,7 +10,7 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
 
-class RegisterViewController: UIViewController ,UIScrollViewDelegate , UITextFieldDelegate {
+class RegisterViewController: UIViewController  , UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!

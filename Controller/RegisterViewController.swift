@@ -11,7 +11,7 @@ import FirebaseFirestore
 import FirebaseAuth
 
 class RegisterViewController: UIViewController  , UITextFieldDelegate {
-
+    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -39,35 +39,34 @@ class RegisterViewController: UIViewController  , UITextFieldDelegate {
                     print(e.localizedDescription)
                     if e.localizedDescription == "The email address is badly formatted." {
                         let alert = UIAlertController(title: "Error", message: "Please enter a valid e-mail."
-, preferredStyle: UIAlertController.Style.alert)
+                                                      , preferredStyle: UIAlertController.Style.alert)
                         let okButton = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil)
                         alert.addAction(okButton)
                         self.present(alert, animated: true, completion: nil)
                     }
                     if self.passwordTextField.text == "" {
                         let alert = UIAlertController(title: "Error", message: "The password must be 6 characters long or more."
-    , preferredStyle: UIAlertController.Style.alert)
+                                                      , preferredStyle: UIAlertController.Style.alert)
                         let okButton = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil)
                         alert.addAction(okButton)
                         self.present(alert, animated: true, completion: nil)
                     } else {
                         let alert = UIAlertController(title: "Error", message: "The password must be 6 characters long or more."
-    , preferredStyle: UIAlertController.Style.alert)
+                                                      , preferredStyle: UIAlertController.Style.alert)
                         let okButton = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil)
                         alert.addAction(okButton)
                         self.present(alert, animated: true, completion: nil)
                     }
-                        
+                    
                     
                 }  else  {
-                        self.performSegue(withIdentifier: sabitler.registersegue, sender: self)
-                        
-                    }
+                    self.performSegue(withIdentifier: sabitler.registersegue, sender: self)
+                }
                 }
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
                 self!.registerButtonOutlet.isSelected = false
-                }
+            }
             self.registerButtonOutlet.isSelected = true
             self.hideKeyboardWhenTappedAround()
         } else if emailTextField.text == "" {
@@ -77,17 +76,6 @@ class RegisterViewController: UIViewController  , UITextFieldDelegate {
             self.present(alert, animated: true, completion: nil)
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
@@ -96,7 +84,7 @@ class RegisterViewController: UIViewController  , UITextFieldDelegate {
             }
         }
     }
-
+    
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
@@ -121,11 +109,11 @@ class RegisterViewController: UIViewController  , UITextFieldDelegate {
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
             self!.registerButtonOutlet.isSelected = false
-            }
+        }
         self.registerButtonOutlet.isSelected = true
         self.hideKeyboardWhenTappedAround()
         return true
     }
     
-
+    
 }

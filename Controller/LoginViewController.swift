@@ -11,7 +11,7 @@ import FirebaseFirestore
 import FirebaseAuth
 
 class LoginViewController: UIViewController , UIScrollViewDelegate, UITextFieldDelegate {
-
+    
     @IBOutlet var loginButtonOutlet: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController , UIScrollViewDelegate, UITextFieldD
         
     }
     
-
+    
     @IBAction func loginButton(_ sender: UIButton) {
         if emailTextField.text != "" , passwordTextField.text != "" {
             if let email = emailTextField.text , let password = passwordTextField.text {
@@ -51,13 +51,13 @@ class LoginViewController: UIViewController , UIScrollViewDelegate, UITextFieldD
                     
                     
                 } else {
-                        self.performSegue(withIdentifier: sabitler.loginsegue, sender: self)
-                    }
+                    self.performSegue(withIdentifier: sabitler.loginsegue, sender: self)
+                }
                 }
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
                 self!.loginButtonOutlet.isSelected = false
-                }
+            }
             self.loginButtonOutlet.isSelected = true
         } else if emailTextField.text == "" {
             let alert = UIAlertController(title: "Error", message: "Please Enter Your Email", preferredStyle: UIAlertController.Style.alert)
@@ -79,7 +79,7 @@ class LoginViewController: UIViewController , UIScrollViewDelegate, UITextFieldD
             }
         }
     }
-
+    
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
@@ -103,11 +103,11 @@ class LoginViewController: UIViewController , UIScrollViewDelegate, UITextFieldD
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
             self!.loginButtonOutlet.isSelected = false
-            }
+        }
         self.loginButtonOutlet.isSelected = true
         print("hit")
         return true
     }
     
-
+    
 }

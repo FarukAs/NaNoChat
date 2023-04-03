@@ -21,11 +21,11 @@ class MessageCell: UITableViewCell {
         view.layer.cornerRadius = view.layer.frame.height / 10
     }
     
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-       
+        
     }
     
 }

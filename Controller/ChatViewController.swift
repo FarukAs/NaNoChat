@@ -64,9 +64,7 @@ class ChatViewController: UIViewController, UIScrollViewDelegate ,UITextFieldDel
             self.view.frame.origin.y = 0
         }
     }
-    func delete() {
-        
-    }
+
     @IBAction func logOutButton(_ sender: Any) {
         do {
             try Auth.auth().signOut()
@@ -144,5 +142,3 @@ extension ChatViewController: UITableViewDataSource {
         messages.count
     }
 }
-
-

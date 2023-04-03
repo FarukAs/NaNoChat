@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var registerButton: UIButton!
     
@@ -28,16 +28,16 @@ class ViewController: UIViewController {
         registerButton.layer.shadowRadius = 10
         registerButton.layer.shadowOpacity = 0.3
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
         
-
+        
     }
     override func viewDidDisappear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = false
     }
-  
+    
     @IBAction func loginButton(_ sender: UIButton) {
         
         
